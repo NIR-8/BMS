@@ -13,6 +13,24 @@
   ],
   "batches": [
     {
+      "id": "1763161426758",
+      "product": "vala",
+      "batchNumber": "v2500252",
+      "comments": "gnb",
+      "status": "scheduled",
+      "author": "MANOJ KUMAR T V",
+      "createdAt": "2025-11-14T23:03:46.758Z",
+      "scheduleShift": "A",
+      "scheduleDate": "2025-11-23",
+      "logs": [
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "created",
+          "timestamp": "2025-11-14T23:03:46.758Z"
+        }
+      ]
+    },
+    {
       "id": "1763161226110",
       "product": "Product A",
       "batchNumber": "v2500635",

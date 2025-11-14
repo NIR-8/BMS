@@ -125,6 +125,12 @@
       "sender": "System",
       "content": "Message deleted by admin",
       "timestamp": "2025-11-14T07:30:04.108Z"
+    },
+    {
+      "id": "1763105424270",
+      "sender": "System",
+      "content": "User \"Operator\" (operator) deleted by admin",
+      "timestamp": "2025-11-14T07:30:24.270Z"
     }
   ]
 }

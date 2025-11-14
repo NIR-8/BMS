@@ -4,11 +4,6 @@
       "id": "admin",
       "name": "Admin User",
       "password": "password123"
-    },
-    {
-      "id": "user1",
-      "name": "User One",
-      "password": "pass123"
     }
   ],
   "batches": [

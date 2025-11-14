@@ -22,7 +22,7 @@
       "product": "Gabapentin",
       "batchNumber": "V2500564",
       "comments": "Updated",
-      "status": "scheduled",
+      "status": "running",
       "author": "MANOJ KUMAR T V",
       "createdAt": "2025-11-14T07:41:46.642Z",
       "scheduleShift": "A",
@@ -32,6 +32,11 @@
           "user": "MANOJ KUMAR T V",
           "action": "created",
           "timestamp": "2025-11-14T07:41:46.642Z"
+        },
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "status changed from scheduled to running",
+          "timestamp": "2025-11-14T07:42:28.962Z"
         }
       ]
     },

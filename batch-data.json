@@ -17,7 +17,7 @@
       "product": "vala",
       "batchNumber": "v2500252",
       "comments": "gnb",
-      "status": "scheduled",
+      "status": "completed",
       "author": "MANOJ KUMAR T V",
       "createdAt": "2025-11-14T23:03:46.758Z",
       "scheduleShift": "A",
@@ -27,6 +27,11 @@
           "user": "MANOJ KUMAR T V",
           "action": "created",
           "timestamp": "2025-11-14T23:03:46.758Z"
+        },
+        {
+          "user": "Admin User",
+          "action": "status changed to completed",
+          "timestamp": "2025-11-14T23:05:12.102Z"
         }
       ]
     },

@@ -167,6 +167,17 @@
       "sender": "System",
       "content": "Batch Gabapentin - V2500564 deleted by MANOJ KUMAR T V",
       "timestamp": "2025-11-14T07:42:38.528Z"
+    },
+    {
+      "id": "1763106874721",
+      "sender": "Admin User",
+      "content": "Check",
+      "timestamp": "2025-11-14T07:54:34.721Z",
+      "visible": true
     }
-  ]
+  ],
+  "hiddenItems": {
+    "batches": [],
+    "messages": []
+  }
 }

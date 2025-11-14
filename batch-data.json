@@ -21,31 +21,7 @@
       "password": "demo"
     }
   ],
-  "batches": [
-    {
-      "id": "1763103761489",
-      "product": "Product A",
-      "batchNumber": "V2500564",
-      "comments": "Update",
-      "status": "running",
-      "author": "Admin User",
-      "createdAt": "2025-11-14T07:02:41.489Z",
-      "scheduleShift": "",
-      "scheduleDate": "2025-11-14",
-      "logs": [
-        {
-          "user": "Admin User",
-          "action": "created",
-          "timestamp": "2025-11-14T07:02:41.489Z"
-        },
-        {
-          "user": "User One",
-          "action": "status changed from pending to running",
-          "timestamp": "2025-11-14T07:09:40.555Z"
-        }
-      ]
-    }
-  ],
+  "batches": [],
   "messages": [
     {
       "id": "1",

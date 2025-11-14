@@ -118,6 +118,12 @@
       "sender": "System",
       "content": "User One updated Product A - V2500564 status to running",
       "timestamp": "2025-11-14T07:09:41.843Z"
+    },
+    {
+      "id": "1763104205716",
+      "sender": "System",
+      "content": "User One posted new batch: Product A - V2500564",
+      "timestamp": "2025-11-14T07:10:05.716Z"
     }
   ]
 }

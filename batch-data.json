@@ -22,7 +22,7 @@
       "product": "Product C",
       "batchNumber": "626",
       "comments": "6+6",
-      "status": "pending",
+      "status": "running",
       "author": "1234",
       "createdAt": "2025-11-14T23:06:17.006Z",
       "scheduleShift": "",
@@ -32,6 +32,11 @@
           "user": "1234",
           "action": "created",
           "timestamp": "2025-11-14T23:06:17.006Z"
+        },
+        {
+          "user": "1234",
+          "action": "status changed to running",
+          "timestamp": "2025-11-14T23:06:24.798Z"
         }
       ]
     },

@@ -4,6 +4,11 @@
       "id": "admin",
       "name": "Admin User",
       "password": "password123"
+    },
+    {
+      "id": "user1",
+      "name": "User One",
+      "password": "pass123"
     }
   ],
   "batches": [
@@ -132,6 +137,12 @@
       "sender": "System",
       "content": "User \"User One\" (user1) deleted by admin",
       "timestamp": "2025-11-14T07:30:27.793Z"
+    },
+    {
+      "id": "1763105431744",
+      "sender": "System",
+      "content": "User \"User One\" (user1) deleted by admin",
+      "timestamp": "2025-11-14T07:30:31.744Z"
     }
   ]
 }

@@ -124,6 +124,12 @@
       "sender": "System",
       "content": "User One posted new batch: Product A - V2500564",
       "timestamp": "2025-11-14T07:10:05.716Z"
+    },
+    {
+      "id": "1763105404108",
+      "sender": "System",
+      "content": "Message deleted by admin",
+      "timestamp": "2025-11-14T07:30:04.108Z"
     }
   ]
 }

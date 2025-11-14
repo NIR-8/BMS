@@ -13,6 +13,24 @@
   ],
   "batches": [
     {
+      "id": "1763143959869",
+      "product": "GABAPENTIN BLEND",
+      "batchNumber": "V2500757",
+      "comments": "EXCIPIENTS",
+      "status": "scheduled",
+      "author": "MANOJ KUMAR T V",
+      "createdAt": "2025-11-14T18:12:39.869Z",
+      "scheduleShift": "C",
+      "scheduleDate": "2025-11-14",
+      "logs": [
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "created",
+          "timestamp": "2025-11-14T18:12:39.869Z"
+        }
+      ]
+    },
+    {
       "id": "1763143795219",
       "product": "LEVETIRACETAM COATING",
       "batchNumber": "V2500680, V2500759",

@@ -40,7 +40,7 @@
       "product": "Product A",
       "batchNumber": "v2500635",
       "comments": "updated",
-      "status": "pending",
+      "status": "completed",
       "author": "Admin User",
       "createdAt": "2025-11-14T23:00:26.110Z",
       "scheduleShift": "",
@@ -50,6 +50,11 @@
           "user": "Admin User",
           "action": "created",
           "timestamp": "2025-11-14T23:00:26.110Z"
+        },
+        {
+          "user": "Admin User",
+          "action": "status changed to completed",
+          "timestamp": "2025-11-14T23:05:16.350Z"
         }
       ]
     }

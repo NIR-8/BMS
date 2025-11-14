@@ -143,6 +143,12 @@
       "sender": "System",
       "content": "New user \"Qwerty\" (1234) created by admin",
       "timestamp": "2025-11-14T07:31:22.555Z"
+    },
+    {
+      "id": "1763105504299",
+      "sender": "System",
+      "content": "Batch Product A - V2500564 deleted by Admin User",
+      "timestamp": "2025-11-14T07:31:44.299Z"
     }
   ]
 }

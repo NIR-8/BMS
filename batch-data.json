@@ -40,7 +40,7 @@
       "product": "Product A",
       "batchNumber": "V2500564",
       "comments": "Update",
-      "status": "scheduled",
+      "status": "completed",
       "author": "Admin User",
       "createdAt": "2025-11-14T07:02:03.643Z",
       "scheduleShift": "B",
@@ -50,6 +50,11 @@
           "user": "Admin User",
           "action": "created",
           "timestamp": "2025-11-14T07:02:03.643Z"
+        },
+        {
+          "user": "User One",
+          "action": "status changed from scheduled to completed",
+          "timestamp": "2025-11-14T07:09:21.264Z"
         }
       ]
     }

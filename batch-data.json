@@ -17,7 +17,7 @@
       "product": "LEVETIRACETAM COATING",
       "batchNumber": "V2500680, V2500759",
       "comments": "500 MG",
-      "status": "scheduled",
+      "status": "completed",
       "author": "MANOJ KUMAR T V",
       "createdAt": "2025-11-14T18:09:55.219Z",
       "scheduleShift": "C",
@@ -27,6 +27,11 @@
           "user": "MANOJ KUMAR T V",
           "action": "created",
           "timestamp": "2025-11-14T18:09:55.219Z"
+        },
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "status changed from scheduled to completed",
+          "timestamp": "2025-11-14T18:10:00.539Z"
         }
       ]
     }

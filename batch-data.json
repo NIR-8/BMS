@@ -22,7 +22,7 @@
       "product": "Product A",
       "batchNumber": "V2500564",
       "comments": "Update",
-      "status": "pending",
+      "status": "running",
       "author": "Admin User",
       "createdAt": "2025-11-14T07:02:41.489Z",
       "scheduleShift": "",
@@ -32,6 +32,11 @@
           "user": "Admin User",
           "action": "created",
           "timestamp": "2025-11-14T07:02:41.489Z"
+        },
+        {
+          "user": "User One",
+          "action": "status changed from pending to running",
+          "timestamp": "2025-11-14T07:09:40.555Z"
         }
       ]
     },

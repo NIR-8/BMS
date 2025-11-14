@@ -124,6 +124,12 @@
       "sender": "System",
       "content": "User One posted new batch: Product A - V2500564",
       "timestamp": "2025-11-14T07:10:05.716Z"
+    },
+    {
+      "id": "1763104235398",
+      "sender": "User One",
+      "content": "Check",
+      "timestamp": "2025-11-14T07:10:35.398Z"
     }
   ]
 }

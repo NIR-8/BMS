@@ -83,6 +83,12 @@
       "sender": "System",
       "content": "Admin User posted new batch: Product A - V2500564",
       "timestamp": "2025-11-14T07:02:43.132Z"
+    },
+    {
+      "id": "1763104162555",
+      "sender": "System",
+      "content": "User One updated Product A - V2500564 status to completed",
+      "timestamp": "2025-11-14T07:09:22.555Z"
     }
   ]
 }

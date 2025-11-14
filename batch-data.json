@@ -44,6 +44,24 @@
           "timestamp": "2025-11-14T07:09:40.555Z"
         }
       ]
+    },
+    {
+      "id": "1763104204574",
+      "product": "Product A",
+      "batchNumber": "V2500564",
+      "status": "pending",
+      "comments": "Ch",
+      "author": "User One",
+      "createdAt": "2025-11-14T09:07:57.615Z",
+      "scheduleDate": "",
+      "scheduleShift": "",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "imported from Excel",
+          "timestamp": "2025-11-14T09:07:57.615Z"
+        }
+      ]
     }
   ],
   "messages": [

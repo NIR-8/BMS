@@ -11,7 +11,26 @@
       "password": "Qwerty1234"
     }
   ],
-  "batches": [],
+  "batches": [
+    {
+      "id": "1763152116642",
+      "product": "gaba material request",
+      "batchNumber": "000445654",
+      "comments": "check",
+      "status": "pending",
+      "author": "MANOJ KUMAR T V",
+      "createdAt": "2025-11-14T20:28:36.642Z",
+      "scheduleShift": "",
+      "scheduleDate": "",
+      "logs": [
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "created",
+          "timestamp": "2025-11-14T20:28:36.642Z"
+        }
+      ]
+    }
+  ],
   "messages": [
     {
       "id": "1",

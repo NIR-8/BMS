@@ -14,6 +14,11 @@
       "id": "1234",
       "name": "Qwerty",
       "password": "1234"
+    },
+    {
+      "id": "demo",
+      "name": "DEMO",
+      "password": "demo"
     }
   ],
   "batches": [

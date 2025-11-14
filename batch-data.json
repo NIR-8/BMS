@@ -23,6 +23,24 @@
   ],
   "batches": [
     {
+      "id": "1763113432981",
+      "product": "Product A",
+      "batchNumber": "v2500361",
+      "comments": "hbjb hj",
+      "status": "scheduled",
+      "author": "Admin User",
+      "createdAt": "2025-11-14T09:43:52.981Z",
+      "scheduleShift": "B",
+      "scheduleDate": "2025-11-14",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-14T09:43:52.981Z"
+        }
+      ]
+    },
+    {
       "id": "1763103761489",
       "product": "Product A",
       "batchNumber": "V2500564",

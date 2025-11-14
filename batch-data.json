@@ -18,6 +18,24 @@
   ],
   "batches": [
     {
+      "id": "1763109730983",
+      "product": "Product C",
+      "batchNumber": "V2500564",
+      "comments": "Hdhs",
+      "status": "pending",
+      "author": "Admin User",
+      "createdAt": "2025-11-14T08:42:10.983Z",
+      "scheduleShift": "",
+      "scheduleDate": "",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-14T08:42:10.983Z"
+        }
+      ]
+    },
+    {
       "id": "1763104204574",
       "product": "Product A",
       "batchNumber": "V2500564",

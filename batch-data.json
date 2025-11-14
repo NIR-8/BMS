@@ -18,6 +18,24 @@
   ],
   "batches": [
     {
+      "id": "1763106106642",
+      "product": "Gabapentin",
+      "batchNumber": "V2500564",
+      "comments": "Updated",
+      "status": "scheduled",
+      "author": "MANOJ KUMAR T V",
+      "createdAt": "2025-11-14T07:41:46.642Z",
+      "scheduleShift": "A",
+      "scheduleDate": "2025-11-14",
+      "logs": [
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "created",
+          "timestamp": "2025-11-14T07:41:46.642Z"
+        }
+      ]
+    },
+    {
       "id": "1763104204574",
       "product": "Product A",
       "batchNumber": "V2500564",

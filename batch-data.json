@@ -149,6 +149,12 @@
       "sender": "System",
       "content": "User \"User One\" (user1) deleted by admin",
       "timestamp": "2025-11-14T07:30:42.934Z"
+    },
+    {
+      "id": "1763105467212",
+      "sender": "System",
+      "content": "New user \"MANOJ KUMAR T V\" (232615) created by admin",
+      "timestamp": "2025-11-14T07:31:07.212Z"
     }
   ]
 }

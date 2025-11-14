@@ -23,24 +23,6 @@
   ],
   "batches": [
     {
-      "id": "1763113458956",
-      "product": "Product A",
-      "batchNumber": "hgjkghjkgmkjhg",
-      "comments": "hmjkg",
-      "status": "pending",
-      "author": "Admin User",
-      "createdAt": "2025-11-14T09:44:18.956Z",
-      "scheduleShift": "",
-      "scheduleDate": "2025-11-14",
-      "logs": [
-        {
-          "user": "Admin User",
-          "action": "created",
-          "timestamp": "2025-11-14T09:44:18.956Z"
-        }
-      ]
-    },
-    {
       "id": "1763113445337",
       "product": "Product A",
       "batchNumber": "vhjyt",

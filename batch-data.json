@@ -11,7 +11,26 @@
       "password": "Qwerty1234"
     }
   ],
-  "batches": [],
+  "batches": [
+    {
+      "id": "1763161226110",
+      "product": "Product A",
+      "batchNumber": "v2500635",
+      "comments": "updated",
+      "status": "pending",
+      "author": "Admin User",
+      "createdAt": "2025-11-14T23:00:26.110Z",
+      "scheduleShift": "",
+      "scheduleDate": "",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-14T23:00:26.110Z"
+        }
+      ]
+    }
+  ],
   "messages": [
     {
       "id": "1",

@@ -9,11 +9,6 @@
       "id": "user1",
       "name": "User One",
       "password": "pass123"
-    },
-    {
-      "id": "operator",
-      "name": "Operator",
-      "password": "operator123"
     }
   ],
   "batches": [

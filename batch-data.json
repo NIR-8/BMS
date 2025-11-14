@@ -13,6 +13,25 @@
   ],
   "batches": [
     {
+      "id": "1763162384412",
+      "product": "vala",
+      "displayName": "vala",
+      "batchNumber": "v25006564",
+      "comments": "hgdrrh",
+      "status": "scheduled",
+      "author": "madhu",
+      "createdAt": "2025-11-14T23:19:44.412Z",
+      "scheduleShift": "B",
+      "scheduleDate": "2025-11-16",
+      "logs": [
+        {
+          "user": "madhu",
+          "action": "created",
+          "timestamp": "2025-11-14T23:19:44.412Z"
+        }
+      ]
+    },
+    {
       "id": "1763161577006",
       "product": "Product C",
       "batchNumber": "626",

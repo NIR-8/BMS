@@ -13,6 +13,25 @@
   ],
   "batches": [
     {
+      "id": "1763445866133",
+      "product": "VALACYCLOVIR",
+      "displayName": "VALACYCLOVIR",
+      "batchNumber": "V2500773",
+      "comments": "BLEND",
+      "status": "scheduled",
+      "author": "Admin User",
+      "createdAt": "2025-11-18T06:04:26.133Z",
+      "scheduleShift": "B",
+      "scheduleDate": "2025-11-18",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-18T06:04:26.133Z"
+        }
+      ]
+    },
+    {
       "id": "1763162384412",
       "product": "vala",
       "displayName": "vala",

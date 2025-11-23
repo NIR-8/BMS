@@ -240,6 +240,12 @@
       "sender": "System",
       "content": "New user 1234 (1234) added by admin",
       "timestamp": "2025-11-23T13:04:42.112Z"
+    },
+    {
+      "id": "1763903139329",
+      "sender": "System",
+      "content": "Admin User posted new batch: Product A - V2500564",
+      "timestamp": "2025-11-23T13:05:39.329Z"
     }
   ],
   "hiddenItems": {

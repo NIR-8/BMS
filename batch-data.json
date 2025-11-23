@@ -49,25 +49,6 @@
           "timestamp": "2025-11-18T06:04:26.133Z"
         }
       ]
-    },
-    {
-      "id": "1763162384412",
-      "product": "vala",
-      "displayName": "vala",
-      "batchNumber": "v25006564",
-      "comments": "hgdrrh",
-      "status": "scheduled",
-      "author": "madhu",
-      "createdAt": "2025-11-14T23:19:44.412Z",
-      "scheduleShift": "B",
-      "scheduleDate": "2025-11-16",
-      "logs": [
-        {
-          "user": "madhu",
-          "action": "created",
-          "timestamp": "2025-11-14T23:19:44.412Z"
-        }
-      ]
     }
   ],
   "messages": [

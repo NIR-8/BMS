@@ -246,6 +246,12 @@
       "sender": "System",
       "content": "Admin User posted new batch: Product A - V2500564",
       "timestamp": "2025-11-23T13:05:39.329Z"
+    },
+    {
+      "id": "1763903144993",
+      "sender": "Admin User",
+      "content": "Check",
+      "timestamp": "2025-11-23T13:05:44.993Z"
     }
   ],
   "hiddenItems": {

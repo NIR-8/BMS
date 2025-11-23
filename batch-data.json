@@ -11,27 +11,7 @@
       "password": "232615"
     }
   ],
-  "batches": [
-    {
-      "id": "1763527529065",
-      "product": "VALACYCLOVIR",
-      "displayName": "VALACYCLOVIR",
-      "batchNumber": "V2500789",
-      "comments": "BLEND",
-      "status": "scheduled",
-      "author": "MANOJ KUMAR T V",
-      "createdAt": "2025-11-19T04:45:29.065Z",
-      "scheduleShift": "A",
-      "scheduleDate": "2025-11-19",
-      "logs": [
-        {
-          "user": "MANOJ KUMAR T V",
-          "action": "created",
-          "timestamp": "2025-11-19T04:45:29.065Z"
-        }
-      ]
-    }
-  ],
+  "batches": [],
   "messages": [
     {
       "id": "1",

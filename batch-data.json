@@ -68,29 +68,6 @@
           "timestamp": "2025-11-14T23:19:44.412Z"
         }
       ]
-    },
-    {
-      "id": "1763161577006",
-      "product": "Product C",
-      "batchNumber": "626",
-      "comments": "6+6",
-      "status": "running",
-      "author": "1234",
-      "createdAt": "2025-11-14T23:06:17.006Z",
-      "scheduleShift": "",
-      "scheduleDate": "",
-      "logs": [
-        {
-          "user": "1234",
-          "action": "created",
-          "timestamp": "2025-11-14T23:06:17.006Z"
-        },
-        {
-          "user": "1234",
-          "action": "status changed to running",
-          "timestamp": "2025-11-14T23:06:24.798Z"
-        }
-      ]
     }
   ],
   "messages": [
@@ -257,10 +234,16 @@
       "visible": true
     },
     {
-      "id": "1763878421078",
+      "id": "1763878417665",
+      "sender": "System",
+      "content": "Batch vala - v2500252 deleted by Admin User",
+      "timestamp": "2025-11-23T06:13:37.665Z"
+    },
+    {
+      "id": "1763878422011",
       "sender": "System",
       "content": "Batch Product A - v2500635 deleted by Admin User",
-      "timestamp": "2025-11-23T06:13:41.078Z"
+      "timestamp": "2025-11-23T06:13:42.011Z"
     }
   ],
   "hiddenItems": {

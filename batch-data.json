@@ -16,7 +16,26 @@
       "password": "1234"
     }
   ],
-  "batches": [],
+  "batches": [
+    {
+      "id": "1763903132741",
+      "product": "Product A",
+      "batchNumber": "V2500564",
+      "comments": "Update",
+      "status": "pending",
+      "author": "Admin User",
+      "createdAt": "2025-11-23T13:05:32.741Z",
+      "scheduleShift": "",
+      "scheduleDate": "",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-23T13:05:32.742Z"
+        }
+      ]
+    }
+  ],
   "messages": [
     {
       "id": "1",

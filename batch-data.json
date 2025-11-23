@@ -91,29 +91,6 @@
           "timestamp": "2025-11-14T23:06:24.798Z"
         }
       ]
-    },
-    {
-      "id": "1763161226110",
-      "product": "Product A",
-      "batchNumber": "v2500635",
-      "comments": "updated",
-      "status": "completed",
-      "author": "Admin User",
-      "createdAt": "2025-11-14T23:00:26.110Z",
-      "scheduleShift": "",
-      "scheduleDate": "",
-      "logs": [
-        {
-          "user": "Admin User",
-          "action": "created",
-          "timestamp": "2025-11-14T23:00:26.110Z"
-        },
-        {
-          "user": "Admin User",
-          "action": "status changed to completed",
-          "timestamp": "2025-11-14T23:05:16.350Z"
-        }
-      ]
     }
   ],
   "messages": [

@@ -215,6 +215,12 @@
       "sender": "System",
       "content": "Batch VALACYCLOVIR - V2500789 deleted by Admin User",
       "timestamp": "2025-11-23T06:14:06.195Z"
+    },
+    {
+      "id": "1763903082112",
+      "sender": "System",
+      "content": "New user 1234 (1234) added by admin",
+      "timestamp": "2025-11-23T13:04:42.112Z"
     }
   ],
   "hiddenItems": {

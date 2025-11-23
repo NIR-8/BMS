@@ -244,6 +244,12 @@
       "sender": "System",
       "content": "Batch Product A - v2500635 deleted by Admin User",
       "timestamp": "2025-11-23T06:13:42.011Z"
+    },
+    {
+      "id": "1763878428362",
+      "sender": "System",
+      "content": "Batch Product C - 626 deleted by Admin User",
+      "timestamp": "2025-11-23T06:13:48.362Z"
     }
   ],
   "hiddenItems": {

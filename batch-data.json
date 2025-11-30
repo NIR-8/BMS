@@ -18,6 +18,25 @@
   ],
   "batches": [
     {
+      "id": "1764517912393",
+      "product": "Product A",
+      "displayName": "GABA",
+      "batchNumber": "G",
+      "comments": "V",
+      "status": "pending",
+      "author": "Admin User",
+      "createdAt": "2025-11-30T15:51:52.393Z",
+      "scheduleShift": "",
+      "scheduleDate": "",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-11-30T15:51:52.393Z"
+        }
+      ]
+    },
+    {
       "id": "1763903132741",
       "product": "Product A",
       "batchNumber": "V2500564",

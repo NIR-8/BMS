@@ -18,6 +18,25 @@
   ],
   "batches": [
     {
+      "id": "1764582277829",
+      "product": "leve",
+      "displayName": "leve",
+      "batchNumber": "check",
+      "comments": "check",
+      "status": "scheduled",
+      "author": "Admin User",
+      "createdAt": "2025-12-01T09:44:37.829Z",
+      "scheduleShift": "B",
+      "scheduleDate": "2025-12-01",
+      "logs": [
+        {
+          "user": "Admin User",
+          "action": "created",
+          "timestamp": "2025-12-01T09:44:37.829Z"
+        }
+      ]
+    },
+    {
       "id": "1764517912393",
       "product": "Product A",
       "displayName": "GABA",

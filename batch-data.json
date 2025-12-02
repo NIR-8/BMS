@@ -18,6 +18,25 @@
   ],
   "batches": [
     {
+      "id": "1764658538601",
+      "product": "ROSUVASTATIN",
+      "displayName": "ROSUVASTATIN",
+      "batchNumber": "VALACYCLOVIR - V2500807, V2500809",
+      "comments": "BLEND",
+      "status": "scheduled",
+      "author": "MANOJ KUMAR T V",
+      "createdAt": "2025-12-02T06:55:38.601Z",
+      "scheduleShift": "A",
+      "scheduleDate": "2025-12-02",
+      "logs": [
+        {
+          "user": "MANOJ KUMAR T V",
+          "action": "created",
+          "timestamp": "2025-12-02T06:55:38.601Z"
+        }
+      ]
+    },
+    {
       "id": "1764658458568",
       "product": "ROSUVASTATIN",
       "displayName": "ROSUVASTATIN",

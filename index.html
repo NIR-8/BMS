@@ -1,0 +1,230 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Batch Management — Modern Dashboard</title>
+  <style>
+    :root{
+      --bg:#f6f8fa;
+      --card:#ffffff;
+      --muted:#6b7280;
+      --primary:#0f172a;
+      --accent:#2563eb;
+      --accent-2:#06b6d4;
+      --success:#16a34a;
+      --danger:#ef4444;
+      --glass: rgba(255,255,255,0.6);
+      --shadow: 0 6px 18px rgba(15,23,42,0.08);
+      --radius:12px;
+      --radius-sm:8px;
+      --gap:12px;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    }*{box-sizing:border-box}
+html,body{height:100%;margin:0;background:var(--bg);color:var(--primary);}
+
+/* App layout */
+.app{
+  display:grid;
+  grid-template-columns: 300px 1fr 360px;
+  grid-template-rows: 64px 1fr;
+  gap:16px;min-height:100vh;padding:20px;
+  align-items:start;
+}
+header.app-header{grid-column:1/-1;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:12px}
+.logo{width:44px;height:44px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:flex;align-items:center;justify-content:center;color:#fff;font-weight:700}
+.title{font-size:1.05rem;font-weight:700}
+.header-controls{display:flex;gap:8px;align-items:center}
+.search{min-width:280px;display:flex;align-items:center;background:var(--card);border-radius:999px;padding:8px 12px;box-shadow:var(--shadow)}
+.search input{border:0;outline:none;background:transparent;width:100%;font-size:0.95rem}
+.btn{background:var(--accent);color:#fff;padding:8px 12px;border-radius:10px;border:0;cursor:pointer}
+.btn.secondary{background:transparent;color:var(--primary);border:1px solid rgba(15,23,42,0.06)}
+
+/* Left sidebar */
+.sidebar{background:linear-gradient(180deg, rgba(255,255,255,0.8), rgba(255,255,255,0.6));border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.nav{display:flex;flex-direction:column;gap:8px}
+.nav a{display:flex;gap:10px;align-items:center;padding:10px;border-radius:8px;color:var(--primary);text-decoration:none}
+.nav a.active{background:rgba(37,99,235,0.08);font-weight:600}
+
+/* Middle - Chat */
+.chat-panel{background:var(--card);border-radius:var(--radius);padding:12px;display:flex;flex-direction:column;min-height:60vh;box-shadow:var(--shadow)}
+.chat-top{display:flex;justify-content:space-between;align-items:center;padding-bottom:8px;border-bottom:1px solid #eef2ff}
+.chat-bubbles{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:10px}
+.bubble{max-width:78%;padding:10px 12px;border-radius:14px;position:relative;word-break:break-word;box-shadow:0 2px 6px rgba(2,6,23,0.04)}
+.bubble.me{align-self:flex-end;background:linear-gradient(180deg,#e8f0ff,#dbeafe);border-bottom-right-radius:6px}
+.bubble.them{align-self:flex-start;background:#f8fafc;border-bottom-left-radius:6px}
+.bubble .meta{font-size:0.78rem;color:var(--muted);margin-bottom:6px}
+.chat-input{display:flex;gap:8px;padding:12px;border-top:1px solid #f1f5f9}
+.chat-input textarea{flex:1;min-height:48px;resize:none;padding:10px;border-radius:8px;border:1px solid #e6eef8}
+.send{width:52px;height:48px;border-radius:10px;border:0;background:var(--accent);color:#fff;cursor:pointer}
+
+/* Right panel */
+.panel{background:var(--card);border-radius:var(--radius);padding:16px;box-shadow:var(--shadow)}
+.calendar{display:grid;grid-template-columns:repeat(7,1fr);gap:6px;margin-top:10px}
+.cal-day{padding:8px;border-radius:8px;text-align:center;font-size:0.85rem}
+.cal-day.has-data{box-shadow:inset 0 -4px 0 rgba(6,182,212,0.14);}
+.cal-day.selected{background:var(--accent);color:#fff}
+
+/* lists */
+.list{display:flex;flex-direction:column;gap:10px;margin-top:12px}
+.item{display:flex;justify-content:space-between;align-items:center;padding:10px;border-radius:10px;border:1px solid #f1f5f9}
+.badge{padding:6px 8px;border-radius:999px;font-weight:600;font-size:0.78rem}
+
+/* modals */
+.modal{position:fixed;inset:0;background:rgba(2,6,23,0.4);display:none;align-items:center;justify-content:center;padding:20px}
+.modal .card{width:720px;max-width:100%;background:var(--card);padding:16px;border-radius:12px}
+.form-row{display:flex;gap:8px}
+.form-row .col{flex:1}
+
+/* responsive */
+@media (max-width:1000px){
+  .app{grid-template-columns: 1fr;grid-template-rows:64px auto auto;padding:12px}
+  .sidebar{order:2}
+  .panel{order:3}
+}
+
+/* small helpers */
+.muted{color:var(--muted);font-size:0.92rem}
+
+  </style>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <div class="brand">
+        <div class="logo">B</div>
+        <div>
+          <div class="title">Batch Management</div>
+          <div class="muted">Modern dashboard</div>
+        </div>
+      </div>
+      <div class="header-controls">
+        <div class="search" role="search" aria-label="Search">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" style="opacity:.6"><path d="M21 21l-4.35-4.35" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path><circle cx="11" cy="11" r="6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></circle></svg>
+          <input placeholder="Search messages, batches, users..." />
+        </div>
+        <button class="btn">New Batch</button>
+        <button class="btn secondary">Export</button>
+      </div>
+    </header><aside class="sidebar">
+  <nav class="nav">
+    <a class="active">💬 Chat</a>
+    <a>📦 Batches</a>
+    <a>📅 Schedule</a>
+    <a>⚙️ Admin</a>
+  </nav>
+
+  <section style="margin-top:18px">
+    <h4 style="margin:0 0 8px 0">Quick actions</h4>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <button class="btn secondary">Add User</button>
+      <button class="btn secondary">Product Names</button>
+    </div>
+  </section>
+
+  <section style="margin-top:18px">
+    <h4 style="margin:0 0 8px 0">Users</h4>
+    <div style="display:flex;gap:8px;flex-direction:column">
+      <div class="item"><div>Admin</div><div class="muted">Owner</div></div>
+      <div class="item"><div>User1</div><div class="muted">Operator</div></div>
+    </div>
+  </section>
+</aside>
+
+<main class="chat-panel" aria-live="polite">
+  <div class="chat-top">
+    <div>
+      <strong>Team Chat</strong>
+      <div class="muted">Collaborate with your team — messages, updates and batch logs</div>
+    </div>
+    <div class="muted">3 online</div>
+  </div>
+
+  <div class="chat-bubbles" id="chatBubbles">
+    <!-- messages will be rendered here -->
+  </div>
+
+  <div class="chat-input">
+    <textarea id="chatInput" placeholder="Write a message..."></textarea>
+    <button class="send" id="sendBtn">➤</button>
+  </div>
+</main>
+
+<aside class="panel">
+  <div style="display:flex;justify-content:space-between;align-items:center">
+    <strong>Calendar</strong>
+    <div class="muted">Today</div>
+  </div>
+
+  <div class="calendar" id="miniCal">
+    <!-- calendar days -->
+  </div>
+
+  <div class="list">
+    <div>
+      <h4 style="margin:8px 0 4px 0">Today's batches</h4>
+      <div class="item"><div>Paracetamol</div><div><span class="badge" style="background:var(--success);color:#fff">running</span></div></div>
+    </div>
+
+    <div>
+      <h4 style="margin:8px 0 4px 0">Scheduled</h4>
+      <div class="item"><div>Batch 123</div><div class="muted">Shift A</div></div>
+    </div>
+  </div>
+</aside>
+
+<!-- Modal (example) -->
+<div class="modal" id="exampleModal" role="dialog" aria-modal="true">
+  <div class="card">
+    <h3>Modal title</h3>
+    <p class="muted">This is an improved modal template for forms and confirmations.</p>
+    <div style="display:flex;justify-content:flex-end;gap:8px;margin-top:12px">
+      <button class="btn secondary" data-close>Cancel</button>
+      <button class="btn">Confirm</button>
+    </div>
+  </div>
+</div>
+
+  </div>  <script>
+    // Minimal JS to demo chat + calendar rendering and improved interactions
+    const demoMessages = [
+      {id:'1',sender:'System',content:'Welcome to the redesigned dashboard!',ts: new Date().toISOString()},
+      {id:'2',sender:'Alice',content:'Morning team — batch 42 started',ts: new Date().toISOString()},
+      {id:'3',sender:'You',content:'Thanks — updating logs now',ts: new Date().toISOString()}
+    ];
+
+    function renderMessages(){
+      const el = document.getElementById('chatBubbles'); el.innerHTML = '';
+      demoMessages.forEach(m=>{
+        const d = document.createElement('div');
+        d.className = 'bubble ' + (m.sender === 'You' ? 'me' : 'them');
+        d.innerHTML = `<div class='meta'>${m.sender} • ${new Date(m.ts).toLocaleTimeString()}</div><div>${escapeHtml(m.content)}</div>`;
+        el.appendChild(d);
+      });
+      el.scrollTop = el.scrollHeight;
+    }
+
+    document.getElementById('sendBtn').addEventListener('click', ()=>{
+      const t = document.getElementById('chatInput');
+      const v = t.value.trim(); if(!v) return; demoMessages.push({id:Date.now().toString(),sender:'You',content:v,ts:new Date().toISOString()}); t.value = ''; renderMessages();
+    });
+
+    function escapeHtml(s){return String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;","\"":"&quot;","'":"&#39;"}[c]||c));}
+
+    // mini calendar
+    function buildCalendar(){
+      const cal = document.getElementById('miniCal'); cal.innerHTML='';
+      const now = new Date(); const year=now.getFullYear(); const month=now.getMonth();
+      const firstDay = new Date(year,month,1).getDay();
+      const days = new Date(year,month+1,0).getDate();
+      ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'].forEach(h=>{const e=document.createElement('div');e.className='cal-day';e.style.fontWeight='700';e.textContent=h;cal.appendChild(e);});
+      for(let i=0;i<firstDay;i++){const e=document.createElement('div');e.className='cal-day';cal.appendChild(e);} 
+      for(let d=1;d<=days;d++){const e=document.createElement('div');e.className='cal-day';e.textContent=d; if(d===now.getDate()) e.classList.add('selected'); if(Math.random()<0.12) e.classList.add('has-data'); e.addEventListener('click',()=>{document.querySelectorAll('#miniCal .cal-day').forEach(x=>x.classList.remove('selected')); e.classList.add('selected');}); cal.appendChild(e);}    }
+
+    buildCalendar(); renderMessages();
+
+    // modal helpers
+    document.querySelectorAll('[data-close]').forEach(b=>b.addEventListener('click',()=>{b.closest('.modal').style.display='none';}));
+    document.addEventListener('keydown',e=>{ if(e.key==='Escape') document.querySelectorAll('.modal').forEach(m=>m.style.display='none'); });
+  </script></body>
+</html>
